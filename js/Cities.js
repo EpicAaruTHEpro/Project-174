@@ -20,7 +20,7 @@ AFRAME.registerComponent("cities", {
     var modelUrl = model.model_url
 
     var scene = document.querySelector("a-scene")
-    var marker = document.createModel("a-marker")
+    var marker = document.createElement("a-marker")
     marker.setAttribute("id", `marker-${modelName}`)
     marker.setAttribute("type", "barcode")
     marker.setAttribute("model_name", modelName)
